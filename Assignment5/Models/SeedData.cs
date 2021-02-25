@@ -32,6 +32,7 @@ namespace Assignment5.Models
                         ISBN = "978-0451419439",
                         Cat = "Fiction, Classic",
                         Price = 9.95,
+                        Pages = 1488,
                     },
 
                     new Textbook
@@ -43,6 +44,7 @@ namespace Assignment5.Models
                         ISBN = "978-0743270755",
                         Cat = "Non-Fiction, Biography",
                         Price = 14.58,
+                        Pages = 944,
                     },
 
                     new Textbook
@@ -54,6 +56,7 @@ namespace Assignment5.Models
                         ISBN = "978-0553384611",
                         Cat = "Non-Fiction, Biography",
                         Price = 21.54,
+                        Pages = 832,
                     },
 
                     new Textbook
@@ -65,6 +68,7 @@ namespace Assignment5.Models
                         ISBN = "978-0812981254",
                         Cat = "Non-Fiction, Biography",
                         Price = 11.61,
+                        Pages = 864,
                     },
 
                     new Textbook
@@ -76,6 +80,7 @@ namespace Assignment5.Models
                         ISBN = "978-0812974492",
                         Cat = "Non-Fiction, Historical",
                         Price = 13.33,
+                        Pages = 528,
                     },
 
                     new Textbook
@@ -87,6 +92,7 @@ namespace Assignment5.Models
                         ISBN = "978-0804171281",
                         Cat = "Fiction, Historical Fiction ",
                         Price = 15.95,
+                        Pages = 288,
                     },
 
                     new Textbook
@@ -98,6 +104,7 @@ namespace Assignment5.Models
                         ISBN = "978-1455586691",
                         Cat = "Non-Fiction, Self-Help",
                         Price = 14.99,
+                        Pages = 304,
                     },
 
                     new Textbook
@@ -109,6 +116,7 @@ namespace Assignment5.Models
                         ISBN = "978-1455523023",
                         Cat = "Non-Fiction, Self-Help",
                         Price = 21.66,
+                        Pages = 240,
                     },
 
                     new Textbook
@@ -120,6 +128,7 @@ namespace Assignment5.Models
                         ISBN = "978-1591847984",
                         Cat = "Non-Fiction, Business",
                         Price = 29.16,
+                        Pages = 400,
                     },
 
                     new Textbook
@@ -131,6 +140,43 @@ namespace Assignment5.Models
                         ISBN = "978-0553393613",
                         Cat = "Fiction, Thrillers",
                         Price = 15.03,
+                        Pages =642,
+                    },
+
+                    new Textbook
+                    {
+                        Title = "Way of Kings",
+                        AuthFirst = "Brandon",
+                        AuthLast = "Sanderson",
+                        Publisher = "Tor Books",
+                        ISBN = "978-0765326355",
+                        Cat = "Fiction, Fantasy",
+                        Price = 9.59,
+                        Pages = 1007,
+                    },
+
+                    new Textbook
+                    {
+                        Title = "Oathbringer",
+                        AuthFirst = "Brandon",
+                        AuthLast = "Sanderson",
+                        Publisher = "Tor Books",
+                        ISBN = "978-0765326379",
+                        Cat = "Fiction, Fantasy",
+                        Price = 18.49,
+                        Pages = 1248,
+                    },
+
+                    new Textbook
+                    {
+                        Title = "Rythm of War",
+                        AuthFirst = "Brandon",
+                        AuthLast = "Sanderson",
+                        Publisher = "Tor Books",
+                        ISBN = "978-0765326386",
+                        Cat = "Fiction, Fantasy",
+                        Price = 18.89,
+                        Pages = 1232,
                     }
 
                 );

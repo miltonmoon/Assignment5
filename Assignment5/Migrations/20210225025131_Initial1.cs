@@ -2,7 +2,7 @@
 
 namespace Assignment5.Migrations
 {
-    public partial class Second : Migration
+    public partial class Initial1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,10 +13,21 @@ namespace Assignment5.Migrations
                 nullable: false,
                 oldClrType: typeof(float),
                 oldType: "real");
+
+            migrationBuilder.AddColumn<int>(
+                name: "Pages",
+                table: "Textbooks",
+                type: "int",
+                nullable: false,
+                defaultValue: 0);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropColumn(
+                name: "Pages",
+                table: "Textbooks");
+
             migrationBuilder.AlterColumn<float>(
                 name: "Price",
                 table: "Textbooks",
