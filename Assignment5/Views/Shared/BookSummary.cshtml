@@ -1,0 +1,16 @@
+﻿@model Textbook
+
+<li class="card-body bg-secondary">
+    <div class="bg-light p-md-2">
+        <h3 class="card-header">Book Title: @Model.Title</h3>
+        <p>Author Name: @Model.AuthFirst @Model.AuthLast</p>
+        <p>Publisher: @Model.Publisher</p>
+        <p>ISBN#: @Model.ISBN</p>
+        <p>Classification: @Model.Class</p>
+        <p>Category: @Model.Cat</p>
+        <p>Price: $@Model.Price</p>
+        <p>Page Count: @Model.Pages</p>
+        <br />
+    </div>
+</li>
+<br />

@@ -9,5 +9,7 @@ namespace Assignment5.Models.ViewModels
     {
         public IEnumerable<Textbook> Books { get; set; }
         public PagingInfo PagingInfo { get; set; }
+        public string CurrentCategory { get; set; }
+
     }
 }

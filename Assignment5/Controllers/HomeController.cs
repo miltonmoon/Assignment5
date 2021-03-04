@@ -24,21 +24,26 @@ namespace Assignment5.Controllers
             _repository = repository;
         }
 
-        public IActionResult Index(int page = 1)
+        public IActionResult Index(string category, int page = 1)
         {
             return View(new BookListViewModel
             {
                 //Sets up book list view model
                 Books = _repository.Textbooks
-                .OrderBy(p => p.BookId)
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize),
+                    .Where(p => category == null || p.Cat == category)
+                    .OrderBy(p => p.BookId)
+                    .Skip((page - 1) * pageSize)
+                    .Take(pageSize),
+
+                //Gets Paging Info, changes number of pages based on category
                 PagingInfo = new PagingInfo
                 {
                     CurrentPage = page,
                     ItemsPerPage = pageSize,
-                    TotalNumItems = _repository.Textbooks.Count()
-                }
+                    TotalNumItems = category == null ? _repository.Textbooks.Count() : 
+                        _repository.Textbooks.Where(x => x.Cat == category).Count()
+                },
+                CurrentCategory = category 
             }
             );
         }

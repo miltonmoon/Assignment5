@@ -12,23 +12,11 @@
 <ul class="list-inline">
     @foreach (var x in Model.Books)
     {
-        <li class="card-body bg-secondary">
-            <div class="bg-light p-md-2">
-                <h3 class="card-header">Book Title: @x.Title</h3>
-                <p>Author Name: @x.AuthFirst @x.AuthLast</p>
-                <p>Publisher: @x.Publisher</p>
-                <p>ISBN#: @x.ISBN</p>
-                <p>Category: @x.Cat</p>
-                <p>Price: $@x.Price</p>
-                <p>Page Count: @x.Pages</p>
-                <br />
-            </div>
-        </li>
-        <br />
+        <partial name="BookSummary" model="x" />
     }
 </ul>
 
 <div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="btn"
      page-class-normal="btn-outline-dark"
-     page-class-selected="btn-primary"
+     page-class-selected="btn-primary" page-url-category="@Model.CurrentCategory"
      class="btn-group pull-right m-1"></div>

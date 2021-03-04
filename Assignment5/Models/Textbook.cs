@@ -23,6 +23,8 @@ namespace Assignment5.Models
         [RegularExpression(@"^(1-)?\d{3}-\d{10}$", ErrorMessage = "Must be in proper ISBN 13 format")]
         public string ISBN { get; set; }
         [Required]
+        public string Class { get; set; }
+        [Required]
         public string Cat { get; set; }
         [Required]
         public double Price { get; set; }
